@@ -1,0 +1,45 @@
+package szyfr;
+
+public class Szyfr {
+
+    public static void main(String[] args) {
+          StringBuilder sb = new StringBuilder();
+        String text = "Hello";
+        int key = 2;
+        
+        for (int i = 0; i < text.length(); i++) {
+            char x = text.charAt(i);
+            x +=key;
+            //coded += x;
+            sb.append(x);
+        }
+        String coded = sb.toString();
+        System.out.println(coded);
+//              
+//        text.chars()
+//                .mapToObj(x -> x+1)
+//                .forEach(x -> System.out.println(x));
+//        System.out.println(coded);
+
+///        String lancuch = "";
+///        
+///        for(int i = 0; i<1000000; i++){
+///            lancuch += '*';
+///        }
+///     System.out.println(lancuch);
+
+////        long t0 = System.currentTimeMillis();
+////
+////        StringBuilder sb = new StringBuilder();
+////
+////        for (int i = 0; i < 1000000; i++) {
+////            sb.append('*');
+////        }
+////        String s = sb.toString();
+////
+////        System.out.println(s);
+////       System.out.println(System.currentTimeMillis() - t0);
+
+    }
+
+}
