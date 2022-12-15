@@ -17,8 +17,8 @@ public class Szyfr {
         System.out.println(coded);
 //              
 //        text.chars()
-//                .mapToObj(x -> x+1)
-//                .forEach(x -> System.out.println(x));
+//                .mapToObj(x -> (char)(x+1))
+//                .forEach(x -> sb.append(x));
 //        System.out.println(coded);
 
 ///        String lancuch = "";
